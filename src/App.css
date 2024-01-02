@@ -243,3 +243,23 @@ footer {
 .nav-links-3{
   margin-left: 10em;
 }
+
+.not-found-container{
+  background-color: #495e57;
+}
+
+.not-found{
+    min-height: 600px;
+    display: flex;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 100px;
+    margin: auto;
+}
+
+.not-found > h1 {
+  color: #f4ce14;
+}

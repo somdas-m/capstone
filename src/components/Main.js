@@ -4,6 +4,7 @@ import { BookingPage } from "../pages/BookingPage"
 import { useReducer, useState } from "react"
 import { getDefaultDate } from "../utils"
 import { HomePage } from "../pages/HomePage"
+import { NotFound } from "../pages/NotFound"
 
 const reducer = (state, action) => {
     const { type, availableTimes } = action
@@ -46,6 +47,7 @@ export const Main = (props) => {
                 <Routes>
                     <Route path="/" element={<HomePage/>}></Route>
                     <Route path="/booking" element={<BookingPage availableTimes={availableTimes}  formState={formState} occassions={occassions} handleChange={handleChange}/>}></Route>
+                    <Route path="*" element={<NotFound/>}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
