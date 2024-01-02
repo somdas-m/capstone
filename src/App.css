@@ -1,16 +1,15 @@
-
 .container {
   display: flex;
   margin-left: 6em;
   margin-right: 6em;
 }
 
-header > img {
+header>img {
   display: flex;
   margin-right: auto;
 }
 
-header > nav ul {
+header>nav ul {
   list-style: none;
   text-align: center;
 }
@@ -62,7 +61,7 @@ a:active {
   border-radius: 2%;
 }
 
-.promotion-text{
+.promotion-text {
   width: 180%;
 }
 
@@ -73,18 +72,22 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-h1, h2 ,p{
-  color: #fff;
+
+h1,
+h2,
+p {
+  color: #000;
 }
 
-.promotion-text > h1 {
+.promotion-text>h1 {
   color: #f4ce14;
 }
-.promotion-text > h2 {
+
+.promotion-text>h2 {
   margin-top: -1em;
 }
 
-button{
+button {
   background-color: #f4ce14;
   border-radius: 1rem;
   font-size: 24px;
@@ -92,3 +95,62 @@ button{
   cursor: pointer;
 }
 
+button:disabled{
+  cursor: not-allowed;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.specials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials>button {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.width-30 {
+  width: 30%;
+  background-color: #f4f4f4;
+  border-radius: 3%;
+  height: fit-content;
+}
+
+.width-30 > img {
+  border-top-right-radius:  3%;
+  border-top-left-radius:  3%;
+  /* height: 30%; */
+}
+
+.special-container{
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.item-1{
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.specials-content{
+  min-height: 33em;
+  flex-grow: 1;
+  /* width: 100%; */
+}
+
+.special-container > h2{
+  display: flex;
+  float: left;
+}
+.price {
+  float: right !important;
+}
+
+.special-container > p {
+  display: inline-block;
+}
