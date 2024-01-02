@@ -1,3 +1,4 @@
+import { About } from "../components/About"
 import { Promotion } from "../components/Promotion"
 import { SpecialItems } from "../components/SpecialItems"
 import { Testimonials } from "../components/Testimonials"
@@ -40,6 +41,9 @@ export const HomePage = (props) => {
         </section>
         <section className="testimonials">
             <Testimonials/>
+        </section>
+        <section className="about">
+            <About/>
         </section>
     </div>
 }

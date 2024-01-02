@@ -193,3 +193,19 @@ button:disabled{
 .testimonials-content{
   display: flex
 }
+
+.p-img-1{
+  width: 40%;
+  margin-top: 7em;
+  display: block;
+  margin-left: 20em;
+}
+.p-img-2{
+  margin-top: -8em;
+  width: 40%;
+  display: inline-block;
+}
+
+.w-200{
+  width: 200%;
+}
