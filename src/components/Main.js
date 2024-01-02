@@ -5,17 +5,17 @@ import { useReducer, useState } from "react"
 import { getDefaultDate } from "../utils"
 import { HomePage } from "../pages/HomePage"
 
-const availableTimesReducer = (state, action) => {
+const reducer = (state, action) => {
     const { type, availableTimes } = action
     if(type === "AVAILABLE_TIMES") return {availableTimes: availableTimes}
     return state
 }
 
 export const Main = (props) => {
-    const initialAvailableState = {
+    const initialState = {
         availableTimes: ["17:00","18:00","19:00","20:00","21:00"]//fetchAPI(getDefaultDate())//["17:00","18:00","19:00","20:00","21:00"]
     }
-    const [state, dispatch] = useReducer(availableTimesReducer, initialAvailableState)
+    const [state, dispatch] = useReducer(reducer, initialState)
     const { availableTimes } = state
     const updateTimes = (availableTimes) => {
         dispatch({
@@ -37,7 +37,6 @@ export const Main = (props) => {
             ...formState,
             [name]: value
         }
-        console.log("Neststae: ", newState);
         setFormState(newState)
     }
 

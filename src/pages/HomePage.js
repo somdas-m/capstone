@@ -1,14 +1,12 @@
+import { Promotion } from "../components/Promotion"
 import { SpecialItems } from "../components/SpecialItems"
-import promotionImg from "../images/Mario and Adrian A.jpg"
+import { Testimonials } from "../components/Testimonials"
 import greekSalad from "../images/greek salad.svg"
 import lemonDesert from "../images/lemon dessert.svg"
 import restaurantFood from "../images/restaurantfood.svg"
 
 export const HomePage = (props) => {
-    const handleOnClick = (e) => {
-        e.preventDefault()
-        window.location.href = "/reservations"
-    }
+   
     const specialItems = [{
         img: greekSalad,
         name: "Greek Salad",
@@ -31,17 +29,7 @@ export const HomePage = (props) => {
 
     return <div className="home">
         <section className="promotion">
-            <div className="container">
-                <div className="promotion-text">
-                    <h1 className="title">Little Lemon</h1>
-                    <h2 className="location text-light">Chicago</h2>
-                    <p className="description text-light">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <button className="reserve" onClick={handleOnClick}>Reserve a table</button>
-                </div>
-                <div className="promotion-img">
-                    <img src={promotionImg} width={"50%"} className="promotion-image" />
-                </div>
-            </div>
+            <Promotion/>
         </section>
         <section className="specials container">
             <h1>Specials</h1>
@@ -49,6 +37,9 @@ export const HomePage = (props) => {
         </section>
         <section className="specials-content container">
             <SpecialItems specialItems={specialItems}/>
+        </section>
+        <section className="testimonials">
+            <Testimonials/>
         </section>
     </div>
 }

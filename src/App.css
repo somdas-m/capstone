@@ -154,3 +154,42 @@ button:disabled{
 .special-container > p {
   display: inline-block;
 }
+
+.testimonials-container {
+  display: grid;
+  margin-top: 1em;
+}
+
+.testimonials {
+  background-color: #495e57;
+}
+
+.testimonials-h{
+  text-align: center;
+  color: #fff;
+}
+
+.review {
+  background-color: #fff;
+  width: 300px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 1%;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.review > img{
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+
+.testimonials-content{
+  display: flex
+}
