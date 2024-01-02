@@ -1,9 +1,46 @@
-div.main-grid {
-  display: grid;
+header {
+  display: flex;
+  margin-left: 6em;
+  margin-right: 6em;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-auto-rows: minmax(150px, auto);
+header > img {
+  display: flex;
+  margin-right: auto;
+}
+
+header > nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1em;
+  font-weight: 600;
+}
+
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: #f4ce14;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: #000;
 }
