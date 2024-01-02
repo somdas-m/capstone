@@ -3,7 +3,7 @@ export const Footer = (props) => {
     return <footer>
         <div className="container">
             <div className="footer-container">
-                <img src={footerLogo} width={"5%"}/>
+                <img src={footerLogo} width={"10%"}/>
                 <div className="footer-nav">
                     <div className="nav-links-1">
                         <h3>Dormat Navigation</h3>

@@ -216,8 +216,8 @@ footer {
 
 .footer-container{
   display: flex;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  margin-bottom: 8em;
 }
 
 .footer-nav{
@@ -235,11 +235,11 @@ footer {
 }
 
 .nav-links-1{
-  margin-left: 15em;
+  margin-left: 10em;
 }
 .nav-links-2{
-  margin-left: 15em;
+  margin-left: 10em;
 }
 .nav-links-3{
-  margin-left: 15em;
+  margin-left: 10em;
 }
