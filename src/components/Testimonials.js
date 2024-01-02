@@ -36,7 +36,7 @@ export const Testimonials = (props) => {
                     const { name, desc, img, rating } = review
                     return <div class="review">
                         <img id="profile-img" src={img} alt="Customer Pic" style={{ borderRadius: "50%", marginTop: "1em" }} />
-                        <h2>{name}</h2>
+                        <h3>{name}</h3>
                         <img id="rating" src={rating} alt="ratings" />
                         <p>"{desc}"</p>
                     </div>

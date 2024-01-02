@@ -191,7 +191,8 @@ button:disabled{
 
 
 .testimonials-content{
-  display: flex
+  display: flex;
+  margin-bottom: 3em;
 }
 
 .p-img-1{
