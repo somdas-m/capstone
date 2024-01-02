@@ -3,6 +3,7 @@ import { BookingForm } from "./BookingForm"
 import { BookingPage } from "../pages/BookingPage"
 import { useReducer, useState } from "react"
 import { getDefaultDate } from "../utils"
+import { HomePage } from "../pages/HomePage"
 
 const availableTimesReducer = (state, action) => {
     const { type, availableTimes } = action
@@ -44,7 +45,7 @@ export const Main = (props) => {
         <div className="main-grid">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<></>}></Route>
+                    <Route path="/" element={<HomePage/>}></Route>
                     <Route path="/booking" element={<BookingPage availableTimes={availableTimes}  formState={formState} occassions={occassions} handleChange={handleChange}/>}></Route>
                 </Routes>
             </BrowserRouter>
