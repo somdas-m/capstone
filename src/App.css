@@ -209,3 +209,37 @@ button:disabled{
 .w-200{
   width: 200%;
 }
+
+footer {
+  background-color: #f4f4f4;
+}
+
+.footer-container{
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.footer-nav{
+  display: flex;
+  margin-left: 3em;
+}
+
+.footer-nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-nav li {
+  font-weight: 600;
+}
+
+.nav-links-1{
+  margin-left: 15em;
+}
+.nav-links-2{
+  margin-left: 15em;
+}
+.nav-links-3{
+  margin-left: 15em;
+}
