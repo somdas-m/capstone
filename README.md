@@ -1,7 +1,8 @@
 # capstone
-The final project on coursera for Meta
+# Little Lemon, Chicago
+## Website with table reservation feature for little lemon
+The final project on coursera for Meta!
 
->Home Page
 
 ![1](https://github.com/somdas-m/capstone/assets/20015686/a3789f7e-d51f-43f0-a69c-fce0ed0fa6fc)
 ![2](https://github.com/somdas-m/capstone/assets/20015686/dea0a955-c798-4e47-a5ee-993eddbde206)
