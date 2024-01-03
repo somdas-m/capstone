@@ -34,7 +34,7 @@ export const Testimonials = (props) => {
             {
                 userReviews.map(review => {
                     const { name, desc, img, rating } = review
-                    return <div class="review">
+                    return <div class="review" key={name}>
                         <img id="profile-img" src={img} alt="Customer Pic" style={{ borderRadius: "50%", marginTop: "1em" }} />
                         <h3>{name}</h3>
                         <img id="rating" src={rating} alt="ratings" />

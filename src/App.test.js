@@ -28,7 +28,8 @@ test('renders the navigation menu items', () => {
 
 test('renders the table reservation form', () => {
   const handleChange = jest.fn();
-  render(<BookingForm formState={initialFormState} availableTimes={[]} occassions={[]} handleChange={handleChange}/>);
+  const handleSubmit = jest.fn();
+  render(<BookingForm formState={initialFormState} availableTimes={[]} occassions={[]} handleChange={handleChange} handleSubmit={handleSubmit}/>);
   const headingElement = screen.getByText("Book Now");
   expect(headingElement).toBeInTheDocument();
   const submitBtn = screen.getByTestId("submitBtn")
