@@ -25,11 +25,13 @@ export const Main = (props) => {
         })
     }
     const occassions = ["Birthday", "Anniversary"]
+    const defaultDate = getDefaultDate()
     const [formState, setFormState] = useState({
-        date: getDefaultDate(),
+        date: defaultDate,
         time: availableTimes[0],
         guestNo: "1",
-        occassion: occassions[0]
+        occassion: occassions[0],
+        defaultDate
     })
     const handleChange = (e) => {
         e.preventDefault()
@@ -46,7 +48,7 @@ export const Main = (props) => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage/>}></Route>
-                    <Route path="/booking" element={<BookingPage availableTimes={availableTimes}  formState={formState} occassions={occassions} handleChange={handleChange}/>}></Route>
+                    <Route path="/reservations" element={<BookingPage availableTimes={availableTimes}  formState={formState} occassions={occassions} handleChange={handleChange}/>}></Route>
                     <Route path="*" element={<NotFound/>}></Route>
                 </Routes>
             </BrowserRouter>
